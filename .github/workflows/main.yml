@@ -29,8 +29,8 @@ jobs:
 
     - name: Commit changes
       run: |
-        git config --global user.name "123"
-        git config --global user.email "actions@github.com"
+        git config --global user.name "github-trending"
+        git config --global user.email "trending@github.com"
         git add output/o.m3u8
         git diff-index --quiet HEAD || git commit -m "init"
         git push
